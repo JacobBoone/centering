@@ -1,0 +1,45 @@
+.container {
+	width: 500px;
+	height: 500px;
+	margin: 20px;
+	background-color: skyblue;
+}
+.inline-horizontal{
+	text-align: center;
+}
+
+.inline-vertical{
+	line-height: 500px;
+}
+
+.inline-vertical > * {
+	vertical-align: middle;
+}
+
+.box{
+	width: 100px;
+	height: 100px;
+	background-color: wheat;
+}
+
+/* 1. centers one element per line as 
+it is a block level element */
+
+/* 2. container must have large width*/
+
+.block-horizontal > *{  /*this selects all children*/
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.block-vertical {
+	display: table;
+}
+
+.block-vertical-inner {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+
+}
